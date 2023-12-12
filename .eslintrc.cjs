@@ -14,6 +14,12 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'no-console': 1
+    'no-console': 1,
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["@mui/*/*/*"]
+      }
+    ]
   },
 }
